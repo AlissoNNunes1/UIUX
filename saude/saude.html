@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="../global.css" />
-<link rel="stylesheet" href="style.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saúde</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde</title>
 </head>
-<header>
-    <div class="header">
-        <a href="../menu/menu.html">
-            <img class="arrow-back" src="../images/arrow-back.svg" alt="Voltar">
-        </a>
-        <div class="text-wrapper">Saúde</div>
-    </div>
-</header>
 <body>
+    <header>
+        <div class="header">
+            <a href="../menu/menu.html">
+                <img class="arrow-back" src="../images/arrow-back.svg" alt="Voltar">
+            </a>
+            <div class="text-wrapper">Saúde</div>
+        </div>
+    </header>
 
-<div class="mediadebpm">Média de  BPM</div>
+    <main>
+        <div class="label">
+            <div class="mediadebpm" id="mediadebpm" aria-live="polite">Média de BPM</div>
+        </div>
 
-<div class="BPM">
-    
-    <p>75 BPM</p>
-</div>
+        <div class="rectangle">
+            <div class="text-wrapper" id="bpm-value" aria-live="polite">90</div>
+        </div>
 
-<div class="NIVEIS">
-    <h2>Níveis de Saúde</h2>
-    <p>Colesterol: 190 mg/dL</p>
-    <p>Glicemia: 90 mg/dL</p>
-    <p>Cálcio: 9.5 mg/dL</p>
-</div>
+        <div class="NIVEIS">
+            <h2>Níveis de Saúde</h2>
+            <ul class="levels">
+                <li id="colesterol" aria-live="polite">Colesterol: 10</li>
+                <li id="glicemia" aria-live="polite">Glicemia: 10</li>
+                <li id="calcio" aria-live="polite">Cálcio: 10</li>
+            </ul>
+        </div>
+    </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
